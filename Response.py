@@ -32,6 +32,7 @@ class Response:
         self.energies = list(map(lambda x: x.energy, list(self.sampleset.data(fields=["energy"]))))
         self.num_occurrences = list(
             map(lambda x: x.num_occurrences, list(self.sampleset.data(fields=["num_occurrences"]))))
+        self.timing = sampleset.info["run_time"] # in microseconds
 
     def print_solutions(self):
         for solution in self.solutions:
@@ -69,5 +70,4 @@ class DWaveResponse(Response):
     def __init__(self, dwave_answer):
         sampleset = SampleSet.from_serializable(dwave_answer)
         Response.__init__(self, sampleset)
-        # self.timing = dwave_answer["timing"]
         # self.used_embedding = dwave_answer["used_embedding"]
