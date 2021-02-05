@@ -1,5 +1,5 @@
-from dimod.sampleset import SampleSet
-from prettytable import PrettyTable
+from dimod.sampleset import SampleSet # type: ignore
+from prettytable import PrettyTable # type: ignore
 
 
 class Response:

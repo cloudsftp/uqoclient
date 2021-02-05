@@ -1,7 +1,7 @@
-from dimod.binary_quadratic_model import BinaryQuadraticModel
-import dimod
-import dwave_networkx as dnx
-import matplotlib.pyplot as plt
+from dimod.binary_quadratic_model import BinaryQuadraticModel # type: ignore
+import dimod # type: ignore
+import dwave_networkx as dnx # type: ignore
+import matplotlib.pyplot as plt # type: ignore
 
 
 class Problem:

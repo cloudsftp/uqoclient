@@ -1,4 +1,4 @@
-import zmq
+import zmq # type: ignore
 from .. import Problem
 from .. import Response
 from .. UQOExceptions import *
